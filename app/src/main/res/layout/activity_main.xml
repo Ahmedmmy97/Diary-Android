@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.a33y.jo.diary.MainActivity"
+    android:id="@+id/mainLayout"
+    android:background="@color/colorText">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad">
+    </com.google.android.gms.ads.AdView>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linearLayout3"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="one_day_picker"
+        app:headerColor="@color/colorPrimaryDark"
+        app:todayLabelColor="@color/colorAccent1"
+        app:selectionColor="@color/colorPrimary"
+        app:eventColor="@color/color3"
+        app:pagesColor="@color/color1"
+        app:abbreviationsBarColor="@color/colorPrimary"
+        app:daysLabelsColor="@color/colorText"
+        app:abbreviationsLabelsColor="@color/colorText"
+
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calendarView">
+<android.support.v7.widget.RecyclerView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/recycle">
+</android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Available Notes"
+            android:gravity="top|center"
+            android:layout_marginTop="20dp"
+            android:id="@+id/emptyEvents"
+            android:textColor="@color/colorPrimary"
+            />
+    </FrameLayout>
+        </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary">
+            <View
+                android:background="#c5c5c5"
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:background="@drawable/recbtn_ripple"
+                   android:text="Month Events"
+                   android:textColor="@color/colorText"
+                   android:id="@+id/mnthEvents"
+                   />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/recbtn_ripple"
+                    android:text="Settings"
+                    android:id="@+id/settings"
+                    android:textColor="@color/colorText"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add1"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            app:fabSize="normal"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="16dp"
+            android:id="@+id/add"
+            />
+    </RelativeLayout>
+</LinearLayout>

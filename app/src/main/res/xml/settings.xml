@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <SwitchPreference
+            android:key="notification"
+            android:title="Enable notifications"
+            />
+
+        <Preference
+            android:key="clr"
+            android:title="Clear Data"
+            android:summary="Clears all previously saved notes."/>
+    <Preference
+        android:title="About"
+        android:selectable="false"
+        android:summary="This app is developed to help people save their moments securely and even get notified by their memories every year.
+
+App Designed and Developed by : Ahmed Yousef." />
+
+</PreferenceScreen>

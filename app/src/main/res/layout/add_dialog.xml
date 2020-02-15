@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/scrollView1"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout1"
+            android:padding="10dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout3"
+                android:layout_centerInParent="false"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Title :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/title"
+                        android:textSize="15sp"
+                        android:hint="Ex: Got a Pet"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/text_border"
+                        android:inputType="textNoSuggestions"
+                        android:maxLength="50"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Date :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/date"
+                        android:textSize="20sp"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Location :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/location"
+                        android:textSize="15sp"
+                        android:hint="Ex: Egypt"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/text_border"
+                        android:inputType="textNoSuggestions"
+                        android:maxLength="20"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Subject/Story :"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <EditText
+                        android:id="@+id/subject"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/text_border"
+                        android:gravity="top"
+                        android:inputType="textMultiLine|textNoSuggestions" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+                    <CheckBox
+                        android:text="Secure Diary With Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/securedChk"
+                        android:textSize="15sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PassLayout"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="Password :"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center" />
+                    <EditText
+                        android:inputType="textPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pass"
+                        android:layout_marginLeft="10dp"
+                        android:hint="*****"
+                        android:background="@drawable/text_border"
+                        android:padding="5dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout2"
+                    android:layout_marginTop="10dp">
+                    <ImageButton
+                        android:id="@+id/add"
+                        android:src="@drawable/ic_confirm_white_24dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                         android:layout_gravity="center"
+                        android:background="@drawable/circlebtn_ripple"
+                         />
+                    <ImageButton
+                        android:id="@+id/cancel"
+                        android:src="@drawable/ic_close_white_24dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circlebtn_ripple"
+                        android:layout_marginLeft="15dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

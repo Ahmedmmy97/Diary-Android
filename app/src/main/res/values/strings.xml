@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Diary</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="abour">This app is developed to help people save their moments securely and even get notified by their memories every year.\n
+App Designed and Developed by : Ahmed Yousef.</string>
+    <string name="app_id">ca-app-pub-7038787403547669~6850643689</string>
+    <string name="banner_ad">ca-app-pub-7038787403547669/4882955899</string>
+</resources>
